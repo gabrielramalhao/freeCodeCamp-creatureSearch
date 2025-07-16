@@ -46,8 +46,8 @@ const showTypes = (creature) => {
 const showCreature = (creature) => {
     creatureName.textContent = creature.name;
     creatureId.textContent = `#${creature.id}`;
-    weight.textContent = creature.weight;
-    height.textContent = creature.height;
+    weight.textContent = `Weight: ${creature.weight}`;
+    height.textContent = `Height: ${creature.height}`;
     hp.textContent = creature.stats[0].base_stat;
     attack.textContent = creature.stats[1].base_stat;
     defense.textContent = creature.stats[2].base_stat;

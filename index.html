@@ -3,51 +3,54 @@
   <head>
     <title>RPG Creature Search</title>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <input type="text" required id="search-input"/>
-    <button id="search-button">Search</button>
-    <section class="creature-desc">
-      <div class="creature-desc-infos">
-        <span id="creature-name"></span>
-        <span id="creature-id"></span>
-        <span id="weight"></span>
-        <span id="height"></span>
-      </div>
-      <div id="types">
-      </div>
-      <div class="creature-desc-ability"></div>
-    </section>
-    <section class="creature-stats">
-      <div class="creature-stats-base">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="creature-stats-hp">
-        <span></span>
-        <span id="hp"> </span>
-      </div>
-      <div class="creature-stats-attack">
-        <span></span>
-        <span id="attack"></span>
-      </div>
-      <div class="creature-stats-defense">
-        <span></span>
-        <span id="defense"></span>
-      </div>
-      <div class="creature-stats-special-attack">
-        <span></span>
-        <span id="special-attack"></span>
-      </div>
-      <div class="creature-stats-special-defense">
-        <span></span>
-        <span id="special-defense"></span>
-      </div>
-      <div class="creature-stats-speed">
-        <span></span>
-        <span id="speed"></span>
-      </div>
-    </section>
+    <main class="container">
+      <input type="text" id="search-input" placeholder="#"/>
+
+      <button id="search-button">Search</button>
+      <section class="creature-desc">
+        <div class="creature-desc-infos">
+          <span id="creature-name"></span>
+          <span id="creature-id"></span>
+          <span id="weight"></span>
+          <span id="height"></span>
+        </div>
+        <div id="types"></div>
+        <div class="creature-desc-ability"></div>
+      </section>
+      <section class="creature-stats">
+        <div class="creature-stats-div">
+          <span>HP:</span>
+          <span id="hp"> </span>
+        </div>
+        <div class="creature-stats-div">
+          <span>Attack:</span>
+          <span id="attack"></span>
+        </div>
+        <div class="creature-stats-div">
+          <span>Defense:</span>
+          <span id="defense"></span>
+        </div>
+        <div class="creature-stats-div">
+          <span>Special Attack:</span>
+          <span id="special-attack"></span>
+        </div>
+        <div class="creature-stats-div">
+          <span>Special Defense:</span>
+          <span id="special-defense"></span>
+        </div>
+        <div class="creature-stats-div">
+          <span>Speed:</span>
+          <span id="speed"></span>
+        </div>
+      </section>
+    </main>
   </body>
   <script src="script.js"></script>
 </html>
